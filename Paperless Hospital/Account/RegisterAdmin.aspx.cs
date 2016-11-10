@@ -1,22 +1,24 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
-using Microsoft.AspNet.Identity;
-using Microsoft.AspNet.Identity.Owin;
-using Owin;
-using Paperless_Hospital.Models;
+using System.Web.UI.WebControls;
 using System.Data;
 using System.Data.SqlClient;
-using System.Configuration;
 
 namespace Paperless_Hospital.Account
 {
-    public partial class Register : Page
+    public partial class RegisterAdmin : System.Web.UI.Page
     {
-        protected void CreateUser_Click(object sender, EventArgs e)
+    //    protected void Page_Load(object sender, EventArgs e)
+    //    {
+
+    //    }
+
+        protected void CreateAdmin_Click(object sender, EventArgs e)
         {
-            string name = Email.Text;
+            string name = username.Text;
             string stateA = State.Text;
             string countryA = Country.Text;
             string pwd = Password.Text;
@@ -37,7 +39,7 @@ namespace Paperless_Hospital.Account
             }
             catch (Exception ex)
             {
-
+                
             }
             finally
             {
