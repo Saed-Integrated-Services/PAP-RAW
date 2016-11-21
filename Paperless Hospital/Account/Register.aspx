@@ -87,7 +87,7 @@
                     <asp:ListItem>coutnry 5</asp:ListItem>
                 </asp:DropDownList>
                 <asp:RequiredFieldValidator runat="server" ControlToValidate="Plan"
-                    CssClass="text-danger" ErrorMessage="The state field is required." />
+                    CssClass="text-danger" ErrorMessage="The country field is required." />
             </div>
         </div>
 
@@ -111,11 +111,11 @@
         </div>
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <%--<asp:Button runat="server" OnClick="CreateUser_Click" Text="Register" CssClass="btn btn-default" />--%>
+                <asp:Button runat="server" OnClick="CreateUser_Click" Text="Register" CssClass="btn btn-default" />
             </div>
-            <div class="col-md-offset-2 col-md-10">
+           <%-- <div class="col-md-offset-2 col-md-10">
                 <a class="btn btn-default" href="RegisterAdmin">Next Page &raquo;</a>
-            </div>
+            </div>--%>
         </div>
     </div>
 </asp:Content>
